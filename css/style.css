@@ -1,0 +1,140 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(152, 171, 216, 1);
+}
+
+#logo__bg__00
+{
+    position: fixed;
+    z-index: -10;
+    top: 1px;
+    left: 300px;
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(-50deg, rgb(236,27,144,1), rgb(152,171,216,0.1));
+    clip-path: circle(45%);
+    filter: blur(50px);
+}
+
+#logo__bg__01
+{
+    position: fixed;
+    z-index: -10;
+    top: 300px;
+    right: 50px;
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(50deg, rgb(236,27,144,1), rgb(152,171,216,0.1));
+    clip-path: circle(25%);
+    filter: blur(50px);
+}
+
+form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(26, 58, 135, 1);
+    border-radius: 5%;
+    color: rgb(152, 171, 216, 1);
+    box-shadow: 0rem 0.063rem 0.938rem 0rem rgba(5, 25, 74, 0.5);
+    width: 25rem;
+    height: 25rem;
+    transition: 0.3s;
+    opacity: 0.9;
+}
+
+form:hover
+{
+    background-color: rgb(26, 58, 135, 1);
+    opacity: 0.8;
+    color: rgb(144, 171, 241);
+}
+
+form div
+{
+    padding: 1.25rem;
+}
+
+.field__msg 
+{
+    padding: 0.625rem;
+}
+
+.field__input
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;    
+}
+
+.field__input input
+{
+    border: none;
+    outline: none;
+    padding: 0.625rem;
+    margin: 0.063rem;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.field__input input:hover
+{
+    background-color: rgb(201, 201, 201);
+}
+
+.form__checkbox input
+{
+    border: none;
+    outline: none;
+}
+
+.form__btn button
+{
+    border: none;
+    outline: none;
+    padding: 0.625rem;
+    margin: 0.063rem;
+    background-color: rgb(50, 99, 214);
+    color: rgb(112, 144, 219);
+    width: 45%;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.form__btn button:hover
+{
+    background-color: rgb(204, 204, 204);
+}
+
+div a
+{
+    color: rgb(152, 171, 216, 1);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+div a:hover
+{
+    color: white;
+}
+
+.form__btn button:active, .field__input input:active, div a:active
+{
+    background-color: rgb(236,27,144,0.7);
+    color: white;
+} 
