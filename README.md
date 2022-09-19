@@ -16,4 +16,6 @@ Dia 4
 
 - Adicionado opção de mostrar senha (Javascript)
 
-![index](https://user-images.githubusercontent.com/19177325/183798967-434e9c9a-59b8-4ae6-b24e-99e720e548aa.png)
+- Visualização aqui
+
+![login](https://user-images.githubusercontent.com/19177325/190943091-f682a5c3-afc7-42e8-ac4f-4d4312fcebaf.png)
