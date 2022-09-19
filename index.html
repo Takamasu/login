@@ -1,50 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Entre ou Registre-se</title>
+
+    <!-- CSS stylesheet link -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- JS script file link -->
+    <script src="./js/script.js" defer></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-  
-    <main class="">
-        
-        
 
-        <form action="" class="">
-       
-            <div class="">
-                <p class="field__msg">Acesse sua conta</p>
+    <header>
+        <h1>Entre ou Registre-se</h1>
+    </header>
 
-                <div class="field__input">
-                    <input type="email" placeholder="e-mail">
-                    <input  type="password" placeholder="senha">
+    <main>
+        <form>
+            <section class="inputs-container">
+                <input type="email" placeholder="email@email.com">
+
+                <div class="password-container">
+                    <input type="password" id="field-password" class="field-password" placeholder="********">
+                    <i class="fa-regular fa-eye" id="eye" onclick="showPass()"></i>
+                    <i class="fa-regular fa-eye-slash" id="eye-slash" onclick="showPass()"></i>
+                </div>
+            </section>
+
+            <section class="password-infos">
+                <div>
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Lembrar senha?</label>
                 </div>
 
-                <div class="form__checkbox">
-                    <input type="checkbox" id="remember__option" class="">
-                    <label for="remember__option">salvar informações neste dispositivo</label>
-                </div>
+                <a href="#">Esqueceu a senha?</a>
+            </section>
 
-                <div class="form__btn">
-                    <button class="">login</button>
-                    <button class="">inscreva-se</button>
-                </div>
-                
-                <div class="">
-                    <a href="#">não consegue acessar sua conta?</a>
-                </div>
+            <button id="btn-login">Login</button>
 
-            </div>
+            <section class="links-container">
+                <span>Ou entre com:</span>
+
+                <aside>
+                    <a href="#"><i class="fa-brands fa-square-google-plus google"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-facebook facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin linkedin"></i></a>
+                </aside>
+            </section>
+
+            <footer>
+                <hr>
+                <span>Ainda não tem uma conta? <a href="#">Cadastre-se</a></span>
+            </footer>
         </form>
-        <div id="logo__bg__00"></div>
-        <div id="logo__bg__01"></div>
-        
     </main>
 
-    <!-- inspiration -->
 </body>
-<script src="js/script.js"></script>
+
 </html>

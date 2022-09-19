@@ -1,140 +1,228 @@
-*
-{
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,300&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: arial;
-}
-
-body
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: rgb(152, 171, 216, 1);
-}
-
-#logo__bg__00
-{
-    position: fixed;
-    z-index: -10;
-    top: 1px;
-    left: 300px;
-    height: 300px;
-    width: 300px;
-    background: linear-gradient(-50deg, rgb(236,27,144,1), rgb(152,171,216,0.1));
-    clip-path: circle(45%);
-    filter: blur(50px);
-}
-
-#logo__bg__01
-{
-    position: fixed;
-    z-index: -10;
-    top: 300px;
-    right: 50px;
-    height: 300px;
-    width: 300px;
-    background: linear-gradient(50deg, rgb(236,27,144,1), rgb(152,171,216,0.1));
-    clip-path: circle(25%);
-    filter: blur(50px);
-}
-
-form
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: rgb(26, 58, 135, 1);
-    border-radius: 5%;
-    color: rgb(152, 171, 216, 1);
-    box-shadow: 0rem 0.063rem 0.938rem 0rem rgba(5, 25, 74, 0.5);
-    width: 25rem;
-    height: 25rem;
-    transition: 0.3s;
-    opacity: 0.9;
-}
-
-form:hover
-{
-    background-color: rgb(26, 58, 135, 1);
-    opacity: 0.8;
-    color: rgb(144, 171, 241);
-}
-
-form div
-{
-    padding: 1.25rem;
-}
-
-.field__msg 
-{
-    padding: 0.625rem;
-}
-
-.field__input
-{
-    margin: 0;
-    padding: 0;
-    width: 100%;    
-}
-
-.field__input input
-{
-    border: none;
-    outline: none;
-    padding: 0.625rem;
-    margin: 0.063rem;
-    width: 100%;
-    transition: 0.3s;
-}
-
-.field__input input:hover
-{
-    background-color: rgb(201, 201, 201);
-}
-
-.form__checkbox input
-{
-    border: none;
-    outline: none;
-}
-
-.form__btn button
-{
-    border: none;
-    outline: none;
-    padding: 0.625rem;
-    margin: 0.063rem;
-    background-color: rgb(50, 99, 214);
-    color: rgb(112, 144, 219);
-    width: 45%;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.form__btn button:hover
-{
-    background-color: rgb(204, 204, 204);
-}
-
-div a
-{
-    color: rgb(152, 171, 216, 1);
+    font-family: Nunito, sans-serif;
     text-decoration: none;
-    transition: 0.5s;
 }
 
-div a:hover
-{
+header {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, .9);
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: rgb(255, 255, 255, .9);
+}
+
+main {
+    width: 100%;
+    min-height: 90vh;
+    background: linear-gradient(#98ABD8, #3d66c7);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    box-shadow: inset 0px 2px 3px rgb(0, 0, 0, .9);
+}
+
+main form {
+    width: 35%;
+    height: 75vh;
+    background-color: rgb(0, 0, 0, .9);
+    box-shadow: 0px 3px 4px rgb(0, 0, 150, .9) inset 0px 4px 4px rgb(0, 0, 150, .9);
+    border-radius: 18px;
+
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form .inputs-container {
+    margin-top: 5%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form .inputs-container input {
+    width: 90%;
+    height: 45px;
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    font-size: 16px;
+    color: rgb(0, 0, 0, .9);
+
+    box-shadow: 0px 3px 3px rgb(0, 0, 0, .9);
+}
+
+main form .inputs-container input:focus {
+    box-shadow: inset 1px 4px 7px rgb(0, 0, 0, .9);
+}
+
+main form .password-container {
+    margin-top: 5%;
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form .password-container i {
+    position: absolute;
+    right: 8%;
+    top: 33%;
+    color: rgb(148, 146, 146);
+    cursor: pointer;
+}
+
+main form .password-container #eye {
+    display: none;
+}
+
+main form .password-infos {
+    width: 90%;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main form .password-infos a {
+    transition: 0.2s ease-in-out;
     color: white;
 }
 
-.form__btn button:active, .field__input input:active, div a:active
-{
-    background-color: rgb(236,27,144,0.7);
-    color: white;
-} 
+main form .password-infos a:hover {
+    color: #3d66c7;
+}
+
+main form button {
+    background-color: #3d66c7;
+    width: 90%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    margin-top: 5%;
+    font-size: 1.6em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+main form button:hover {
+    background-color: #fff;
+    color: #3d66c7;
+}
+
+main form .links-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+main form .links-container span {
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+main form .links-container aside {
+    margin: 5%;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main form .links-container aside i {
+    font-size: 1.6em;
+    background-color: white;
+    padding: 8px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main form .links-container aside .google {
+    color: #e34133;
+}
+
+main form .links-container aside .google:hover {
+    background-color: #e34133;
+    color: #fff;
+}
+
+main form .links-container aside .facebook {
+    color: #14a0f9;
+}
+
+main form .links-container aside .facebook:hover {
+    background-color: #14a0f9;
+    color: #fff;
+}
+
+main form .links-container aside .linkedin {
+    color: #0a66c2;
+}
+
+main form .links-container aside .linkedin:hover {
+    background-color: #0a66c2;
+    color: #fff;
+}
+
+main form footer {
+    width: 100%;
+    margin-top: 3%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main form footer hr {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}
+
+main form footer span {
+    font-weight: 400;
+    font-size: 0.9em;
+    margin-top: 5%;
+}
+
+main form footer a {
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+    color: #fff;
+}
+
+main form footer a:hover {
+    color: #0a66c2;
+}
